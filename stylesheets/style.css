@@ -273,6 +273,37 @@ img.logo-1, img.logo-2{
 	height: 40px;
 }
 
+.news-col-header{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	padding: 20px 0px 0px 30px;
+	text-align: left;
+}
+
+.news-col-header h3{
+	margin: 0;
+	padding: 0;
+	font-size: 180%;
+	display: inline;
+}
+
+.news-col-header .nh-latest{
+	color: red;
+	border-bottom: 3px solid red;
+}
+
+.news-col-header .nh-news{
+	margin-left: -4px;
+	color: gray;
+	border-bottom: 3px solid gray;	
+	padding-right: 10px;
+}
+
+.news-col-header .nh-news span{
+	margin-left: 4px;
+}
+
 /**************************************** End of News block ****************************************************/
 
 /********************************************* News block ****************************************************/
