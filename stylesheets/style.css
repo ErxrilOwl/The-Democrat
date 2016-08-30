@@ -266,9 +266,13 @@ img.logo-1, img.logo-2{
 	width: 30%;
 }
 
-.news-col-2 a{
+.news-col-2 .twitter-timeline{
 	width: 100%;
-	height: 100vh;
+	padding-top: 5px;
+	height: 540px;
+	border: 1px solid #1DA1F2;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 
