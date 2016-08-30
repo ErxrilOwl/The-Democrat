@@ -351,11 +351,11 @@
 
 	.title-bar{
 		width: 100%;
-		height: 12vh;
+		height: 15vh;
 	}
 
 	.da-slider{
-		height: 86vh;
+		height: 85vh;
 	}
 
 	.slideshow .da-slide h2{
@@ -615,11 +615,11 @@
 
 	.title-bar{
 		width: 100%;
-		height: 10vh;
+		height: 11vh;
 	}
 
 	.da-slider{
-		height: 90vh;
+		height: 89vh;
 	}
 
 	.slideshow .da-slide h2{
