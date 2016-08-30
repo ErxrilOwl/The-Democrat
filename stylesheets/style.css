@@ -1,0 +1,289 @@
+/*
+	File name: style.css
+	Date Created: 07/17/2016
+	Date Last Modified: 07/18/2016
+	Developer: Nikko Atuan
+*/
+
+*{
+	box-sizing: border-box;
+	font-family: 'Cinzel', serif;
+}
+
+body, .container, .row, .title-bar, .red-bar{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+.red-bar{
+	border: 2px solid red;
+}
+
+a{
+	text-decoration: none;
+	color: #1c1c1c;
+}
+
+ul, li{
+	list-style: none;
+}
+
+.title{
+	position: relative;
+	text-align: center;
+	height: 80px;
+	overflow: hidden;
+}
+
+.title-bar{
+	width: 100%;
+	height: 22vh;
+}
+.t-elem-1, .t-elem-2, .t-elem-3{
+	margin: 0;
+	padding: 0;
+	float: left;
+	margin-top: 15px;
+}
+
+img.logo-1, img.logo-2{
+	width: 50px;
+	height: 50px;
+	display: inline;
+}
+
+.t-elem-2 h1{
+	margin: 0;
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 180%;
+}
+
+.t-elem-1, .t-elem-3{
+	width: 34%;
+	text-align: right;
+}
+
+.t-elem-3{
+	text-align: left;
+}
+
+.t-elem-2{
+	width: 32%;
+	font-size: 1.2em;
+}
+
+.menu-open,.menu .open > ul{
+ 	max-height: 2000px;
+}
+
+.menu .open > .more img{
+	transform: rotate(-90deg);
+}
+
+.more img{
+ 	height: 55px;
+ 	transition: transform 0.3s;
+}
+.more{
+ 	background: rgba(0, 0, 0, 0.38);
+ 	float: right;
+ 	min-width: 10%;
+ 	cursor: move;
+}
+
+.home{
+	background-attachment: fixed;
+}
+
+/******************************* Login and Sign up  ***********************************/
+.link-account{
+	display: inline;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.link-effect{
+	width: 70px;
+	height: 20px;
+	padding: 12px;
+	color: #282828;
+	text-align: left;
+	font-size: 16px;
+	transition: 0.2s all;
+	cursor: pointer;
+	margin: 0;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.link-effect:hover{
+	transition: 0.6s;
+	background-color: red;
+	color: white;
+}
+
+
+/******************************* End of Login and Sign up  ***********************************/
+
+
+/******************************* Nav menu  ***********************************/
+.nav-menu ul li{
+	text-align: center;
+}
+
+.menu{
+	height: 30px;
+}
+
+.menu-btn{
+	position: relative;
+}
+
+.nav-menu ul > li{
+	float: left;
+	width: 16%;
+	padding: 0;
+	font-size: 110%;
+}
+
+.asterisk{
+	float: left;
+}
+
+.nav-link-effect, .nav-link-effect:visited, .nav-link-effect:hover, .nav-link-effect:active{
+	padding: 8px 25px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: relative;
+	transition: 0.5s color ease;
+	color: #000;
+} 
+
+.nav-link-effect:hover{
+	color: red;
+}
+
+.nav-before:before, .nav-after:after{
+	content: "";
+	transition: 0.5s all ease;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+}
+
+.nav-before:before{ top: -0.25em; }
+.nav-after:after{ bottom: -0.25em; }
+
+.nav-before:before, .nav-after:after{
+	height: 0.15rem;
+	width: 0;
+	background: red;
+}
+
+.nav-link-effect:before{ right: 0; }
+.nav-link-effect:after{ left: 0; }
+.nav-before:hover:before, .nav-after:hover:after{
+	width: 100%;
+}
+/******************************* End of nav menu  ***********************************/
+
+/******************************* Sub menu *******************************************/
+.dropdown{
+	position: relative;
+}
+
+.inner-menu{
+	z-index: 3000;
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 120px;
+	padding: 0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .inner-menu {
+    display: block;
+}
+
+.inner-menu li a{
+	display: block;
+	padding: 10px 10px;
+	font-size: 1em;
+}
+
+.inner-menu li{
+	width: 100% !important;
+	color: black;
+	display: block;
+}
+
+.inner-menu a:hover {
+	background-color: red;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+/***************************** End of Sub menu ***********************************************/
+
+/********************************************* News block ****************************************************/
+
+.news-block{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background: url('images/background/paper-texture-1.jpg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.news-col{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 100vh;
+}
+
+.news-col-1{
+	width: 70%;
+}
+
+.news-col-2{
+	width: 30%;
+}
+
+.news-col-2 a{
+	width: 100%;
+	height: 100vh;
+}
+
+
+/**************************************** End of News block ****************************************************/
+
+/********************************************* News block ****************************************************/
+
+.feature-block{
+	width: 100%;
+	height: 100vh;
+	background-color: gray;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/**************************************** End of News block ****************************************************/

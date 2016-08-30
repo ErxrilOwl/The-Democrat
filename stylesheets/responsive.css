@@ -1,0 +1,640 @@
+/************************************************** Large devices **************************************************/
+
+@media (min-width: 1200px){
+	.menu-btn-burger{
+		display: none;
+	}
+
+	.menu .menu-btn-account, .menu-btn-burger-inner{
+		display: none;
+	}
+
+
+}
+
+
+
+/************************************************** Medium devices **************************************************/
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.menu-btn-burger{
+		display: none;
+	}
+
+	.menu .menu-btn-account, .menu-btn-burger-inner{
+		display: none;
+	}	
+}
+
+
+
+/************************************************** Small devices **************************************************/
+@media (min-width: 768px) and (max-width: 991px){
+	.menu-btn-burger, .menu-btn-burger-inner{
+		display: none;
+	}
+
+	.t-elem-1, .t-elem-2, .t-elem-3{
+		margin-top: 10px;
+	}
+
+	.t-elem-2 h1{
+		font-size: 130%;
+	}
+
+	.title{
+		height: 45px;
+	}
+
+	img.logo-1, img.logo-2{
+		width: 30px;
+		height: 30px;
+	}
+
+	.link-effect{
+		width: 50px;
+		height: 18px;
+		padding: 10px;
+		color: #282828;
+		font-size: 13px;
+	}
+
+	.menu{
+		height: 25px;
+	}
+
+	.nav-menu ul > li{
+		width: 16%;
+		padding: 0;
+		font-size: 100%;
+	}
+
+	.asterisk{
+		display: none;
+	}
+
+	.inner-menu-sections{
+		min-width: 130px;
+	}
+
+	.inner-menu li a{
+		font-size: .8em;
+	}
+
+	.menu .menu-btn-account{
+		display: none;
+	}
+
+	.title-bar{
+		width: 100%;
+		height: 15vh;
+	}
+
+	.da-slider{
+		height: 85vh;
+	}
+
+	.slideshow .da-slide h2{
+		bottom: 55%;
+	}
+
+	.slideshow .da-slide p{
+		font-size: 15px;
+		width: 60%;
+		bottom: 26%;
+	}
+
+	.slideshow .da-slide .da-link{
+		font-size: 14px;
+		bottom: 15%;
+	}
+}
+
+
+
+/************************************************** Extra small devices **************************************************/
+@media (min-width: 480px) and (max-width: 767px){
+	img.logo-1, img.logo-2{
+		width: 30px;
+		height: 30px;
+	}
+
+	.t-elem-1, .t-elem-3{
+		width: 28%;
+	}
+
+	.t-elem-2{
+		width: 44%;
+	}
+
+	.t-elem-2 h1{
+		margin-top: 2px;
+		font-size: 130%;
+	}
+
+	.menu-btn-burger img{
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+	}
+
+	.title{
+		height: 60px;
+	}
+
+	.asterisk{
+		display: none;
+	}
+
+	.link-account .link-effect-tablet{
+		display: none;
+	}
+
+	.nav-menu .menu-btn-burger{
+		display: block;
+		width: 100%;
+		text-align: center;
+		background-color: #2b2b2b;
+		height: 27px;
+		border-bottom: 1px solid gray;
+	}
+
+	/* Resets property */
+	.nav-link-effect, .nav-link-effect:visited, .nav-link-effect:hover, .nav-link-effect:active{
+		padding: 0;
+		-webkit-backface-visibility: visible !important;
+		-moz-backface-visibility: visible !important;
+		-o-backface-visibility: visible !important;
+		-ms-backface-visibility: visible !important;
+		backface-visibility: visible !important;
+		position: static !important;
+		transition: none !important;
+		color: inherit !important;
+	} 
+
+	.nav-link-effect:hover{
+		color: inherit !important;
+	}
+
+	.nav-before:before, .nav-after:after{
+		content: normal !important;
+		transition: none !important;
+		-webkit-backface-visibility: visible !important;
+		-moz-backface-visibility: visible !important;
+		-o-backface-visibility: visible !important;
+		-ms-backface-visibility: visible !important;
+		backface-visibility: visible !important;
+		position: static !important;
+	}
+
+	.nav-before:before{ top: auto !important; }
+	.nav-after:after{ bottom: auto !important; }
+
+	.nav-before:before, .nav-after:after{
+		height: auto !important;
+		width: auto !important;
+		background: 0 !important;
+	}
+
+	.nav-link-effect:before{ right: auto !important; }
+	.nav-link-effect:after{ left: auto !important; }
+	.nav-before:hover:before, .nav-after:hover:after{
+		width: auto !important;
+	}
+
+	.dropdown{
+		position: relative !important;
+	}
+
+	.inner-menu{
+		display: block !important;
+		position: relative !important;
+		background-color: 0 !important;
+		min-width: auto !important;
+		padding: 0 !important;
+		box-shadow: 0 !important;
+	}
+
+	.dropdown:hover .inner-menu {
+	    display: block !important;
+	}
+
+	.inner-menu li a{
+		display: block !important;
+		padding: none !important;
+		font-size: none !important;
+	}
+
+	.inner-menu li{
+		width: 100% !important;
+		color: 0 !important;
+		display: none !important;
+	}
+
+	.inner-menu a:hover {
+		background-color: 0 !important;
+		font-weight: normal !important;
+		color: 0 !important;
+	}
+
+	.menu-btn-burger ~ .menu{
+		display: none;
+	}
+
+	.menu-btn-burger:hover ~ .menu, .menu-btn-burger:active ~ .menu, .menu:hover, .menu:active{
+		transition: 0.8s color ease;
+		display: block;
+	}
+
+	.menu .menu-btn{
+		display: block;
+		width: 100%;
+		background-color: #2b2b2b;
+		padding: 5px 0px;
+		border-bottom: 1px solid gray;
+		color: white;
+		text-align: left;
+	}
+
+	.menu{
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-menu ul > li{
+		position: relative;
+		font-size: 75%;
+	}
+
+	.nav-menu ul > li a{
+		padding-left: 10px;
+		vertical-align: middle;
+	}
+
+	.nav-menu ul > li .nav-link-effect{
+		padding-top: 10px;
+	}
+
+	.nav-menu ul > li:hover{
+		transition: 0.3s ease;
+		background-color: white;
+		color: red;
+	}
+
+	.menu-btn-burger-inner .burger-btn-hover, .menu-btn-burger-inner .burger-btn-unhover{
+		float: right;
+	}
+
+	.menu-btn-burger-inner .burger-btn-hover{
+		transition: 0.3s ease;
+		display: none;
+	}
+
+	.nav-menu ul > li:hover .menu-btn-burger-inner .burger-btn-hover{
+		transition: 0.3s ease;
+		display: block;
+	}
+
+	.nav-menu ul > li:hover .menu-btn-burger-inner .burger-btn-unhover{
+		transition: 0.3s ease;
+		display: none;
+	}
+
+	.nav-menu ul li ul li, .nav-menu ul li ul li{
+		height: 20px;
+	}
+
+	.inner-menu li a{
+		font-size: 130%;
+		padding: 2px;
+	}
+
+	.menu-btn-burger-inner img{
+		width: 13px;
+		height: 13px;
+		margin-right: 20px;
+		margin-top: 0px;
+	}
+
+
+	.menu li .nav.link-effect{
+		float: left;
+		width: 80%;
+	}
+
+	.menu li .menu-btn-burger-inner{
+		float: right;
+		width: 20%;
+		text-align: right;
+	}
+
+	.dropdown .inner-menu{
+		display: none !important;
+	}
+
+
+	.dropdown:hover .inner-menu {
+	    display: block !important;
+	}
+
+	.inner-menu li a{
+		display: block !important;
+		padding: none !important;
+		font-size: none !important;
+	}
+
+	.inner-menu li{
+		width: 100% !important;
+		color: 0 !important;
+		display: block !important;
+	}	
+
+	.title-bar{
+		width: 100%;
+		height: 12vh;
+	}
+
+	.da-slider{
+		height: 86vh;
+	}
+
+	.slideshow .da-slide h2{
+		font-size: 30px;
+		bottom: 64%;
+	}
+
+	.slideshow .da-slide p{
+		font-size: 15px;
+		width: 80%;
+		bottom: 26%;
+	}
+
+	.slideshow .da-slide .da-link{
+		font-size: 13px;
+		bottom: 15%;
+	}
+}
+
+
+
+/************************************************** Super extra small devices **************************************************/
+@media (max-width: 479px){
+	img.logo-1, img.logo-2{
+		display: none;
+	}
+
+	.t-elem-1, .t-elem-3{
+		display: none;
+	}
+
+	.t-elem-2{
+		margin-top: 5px;
+		width: 100%;
+	}
+
+	.t-elem-2 h1{
+		margin-top: 2px;
+		font-size: 130%;
+	}
+
+	.menu-btn-burger img{
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+	}
+
+	.title{
+		height: 40px;
+	}
+
+	.asterisk{
+		display: none;
+	}
+
+	.link-account .link-effect-tablet{
+		display: none;
+	}
+
+	.nav-menu .menu-btn-burger{
+		display: block;
+		width: 100%;
+		text-align: center;
+		background-color: #2b2b2b;
+		height: 27px;
+		border-bottom: 1px solid gray;
+	}
+
+	/* Resets property */
+	.nav-link-effect, .nav-link-effect:visited, .nav-link-effect:hover, .nav-link-effect:active{
+		padding: 0;
+		-webkit-backface-visibility: visible !important;
+		-moz-backface-visibility: visible !important;
+		-o-backface-visibility: visible !important;
+		-ms-backface-visibility: visible !important;
+		backface-visibility: visible !important;
+		position: static !important;
+		transition: none !important;
+		color: inherit !important;
+	} 
+
+	.nav-link-effect:hover{
+		color: inherit !important;
+	}
+
+	.nav-before:before, .nav-after:after{
+		content: normal !important;
+		transition: none !important;
+		-webkit-backface-visibility: visible !important;
+		-moz-backface-visibility: visible !important;
+		-o-backface-visibility: visible !important;
+		-ms-backface-visibility: visible !important;
+		backface-visibility: visible !important;
+		position: static !important;
+	}
+
+	.nav-before:before{ top: auto !important; }
+	.nav-after:after{ bottom: auto !important; }
+
+	.nav-before:before, .nav-after:after{
+		height: auto !important;
+		width: auto !important;
+		background: 0 !important;
+	}
+
+	.nav-link-effect:before{ right: auto !important; }
+	.nav-link-effect:after{ left: auto !important; }
+	.nav-before:hover:before, .nav-after:hover:after{
+		width: auto !important;
+	}
+
+	.dropdown{
+		position: relative !important;
+	}
+
+	.inner-menu{
+		display: block !important;
+		position: relative !important;
+		background-color: 0 !important;
+		min-width: auto !important;
+		padding: 0 !important;
+		box-shadow: 0 !important;
+	}
+
+	.dropdown:hover .inner-menu {
+	    display: block !important;
+	}
+
+	.inner-menu li a{
+		display: block !important;
+		padding: none !important;
+		font-size: none !important;
+	}
+
+	.inner-menu li{
+		width: 100% !important;
+		color: 0 !important;
+		display: none !important;
+	}
+
+	.inner-menu a:hover {
+		background-color: 0 !important;
+		font-weight: normal !important;
+		color: 0 !important;
+	}
+
+	.menu-btn-burger ~ .menu{
+		display: none;
+	}
+
+	.menu-btn-burger:hover ~ .menu, .menu-btn-burger:active ~ .menu, .menu:hover, .menu:active{
+		transition: 0.8s color ease;
+		display: block;
+	}
+
+	.menu .menu-btn{
+		display: block;
+		width: 100%;
+		background-color: #2b2b2b;
+		padding: 5px 0px;
+		border-bottom: 1px solid gray;
+		color: white;
+		text-align: left;
+	}
+
+	.menu{
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-menu ul > li{
+		position: relative;
+		font-size: 75%;
+	}
+
+	.nav-menu ul > li a{
+		padding-left: 10px;
+		vertical-align: middle;
+	}
+
+	.nav-menu ul > li .nav-link-effect{
+		padding-top: 10px;
+	}
+
+	.nav-menu ul > li:hover{
+		transition: 0.3s ease;
+		background-color: white;
+		color: red;
+	}
+
+	.menu-btn-burger-inner .burger-btn-hover, .menu-btn-burger-inner .burger-btn-unhover{
+		float: right;
+	}
+
+	.menu-btn-burger-inner .burger-btn-hover{
+		transition: 0.3s ease;
+		display: none;
+	}
+
+	.nav-menu ul > li:hover .menu-btn-burger-inner .burger-btn-hover{
+		transition: 0.3s ease;
+		display: block;
+	}
+
+	.nav-menu ul > li:hover .menu-btn-burger-inner .burger-btn-unhover{
+		transition: 0.3s ease;
+		display: none;
+	}
+
+	.nav-menu ul li ul li, .nav-menu ul li ul li{
+		height: 20px;
+	}
+
+	.inner-menu li a{
+		padding: 2px;
+	}
+
+	.menu-btn-burger-inner img{
+		width: 13px;
+		height: 13px;
+		margin-right: 20px;
+		margin-top: 0px;
+	}
+
+
+	.menu li .nav.link-effect{
+		float: left;
+		width: 80%;
+	}
+
+	.menu li .menu-btn-burger-inner{
+		float: right;
+		width: 20%;
+		text-align: right;
+	}
+
+	.dropdown .inner-menu{
+		display: none !important;
+	}
+
+
+	.dropdown:hover .inner-menu {
+	    display: block !important;
+	}
+
+	.inner-menu li a{
+		display: block !important;
+		padding: none !important;
+		font-size: none !important;
+	}
+
+	.inner-menu li{
+		width: 100% !important;
+		color: 0 !important;
+		display: block !important;
+	}
+
+	.title-bar{
+		width: 100%;
+		height: 10vh;
+	}
+
+	.da-slider{
+		height: 90vh;
+	}
+
+	.slideshow .da-slide h2{
+		font-size: 26px;
+		bottom: 75%;
+	}
+
+	.slideshow .da-slide p{
+		font-size: 12px;
+		width: 80%;
+		bottom: 24%;
+	}
+
+	.slideshow .da-slide .da-link{
+		font-size: 12px;
+		bottom: 14%;
+	}
+}

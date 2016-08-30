@@ -14,449 +14,151 @@
 		<meta name="description" content="Student Journalist Website of the University of Nueva Caceres">
 		<meta name="keywords" content="Student Press, Students Journalist, The Democrat, University of Nueva Caceres">
 		<meta name="author" content="Nikko Atuan">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 
 		<title>The Democrat</title>
+
 		<link rel="icon" type="image/png" href="images/logo/The DEMOCRAT Logo Tab.png">
-		<link href="stylesheet/bootstrap.min.css" type="text/css" rel="stylesheet">
-		<link href="stylesheet/style.css" type="text/css" rel="stylesheet">
-		<link href="stylesheet/responsive.css" type="text/css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+		<link href="stylesheets/responsive.css" type="text/css" rel="stylesheet">
+		<link href="stylesheets/slideshow.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
 	</head>
 
 	<body>
-		<div class="fluid-container">
-			<div class="parallax">
-				<div class="red-bar"></div>
-				<div class="row">
-					<div class="title-bar col-md-6">
-						<div class="title">
-							<img class="logo-1 image-responsive" src="images/logo/University_of_Nueva_Caceres_Seal.png">
-							<h1><a href="index.html">THE DEMOCRAT</a></h1>
-							<img class="logo-2 image-reponsive" src="images/logo/The DEMOCRAT Logo Gray.png">
-						
-							<nav class="link-account">
-								<a class="link-effect Login">Login</a>
-								<a class="link-effect Sign-Up">Sign Up</a>
-							</nav>
-						</div>	
-					</div> <!--End of class title-bar-->
-
-					
-					<nav class="nav-bar-democrat col-md-6">
-						<ul>
-							<li class="sub-menu-parent"><a class="nav-link-effect nav-before nav-after" href="index.html">HOME</a></li>
-							<span>*</span>
-							<li class="news sub-menu-parent">
-								<a class="nav-link-effect nav-before nav-after">NEWS</a>
-								<ul class="sub-menu sub-menu-before sub-menu-after">
-									<li><a href="">Hot</a></li>
-									<li><a href="">Fresh</a></li>
-									<li><a href="">More News</a></li>
-								</ul>
-							</li>
-							<span>*</span>
-							<li class="feature sub-menu-parent">
-								<a class="nav-link-effect nav-before nav-after">FEATURE</a>
-								<ul class="sub-menu sub-menu-before sub-menu-after">
-									<li><a href="">Featured News</a></li>
-									<li><a href="">Featured Article</a></li>
-									<li><a href="">Featured Story</a></li>
-								</ul>	
-							</li>
-							<span>*</span>
-							<li class="section sub-menu-parent">
-								<a class="nav-link-effect nav-before nav-after">SECTIONS</a>
-								<ul class="sub-menu sub-menu-before sub-menu-after">
-									<li><a href="">UNC Hot Seat</a></li>
-									<li><a href="">Articles</a></li>
-									<li><a href="">Opinion</a></li>
-									<li><a href="">Sports</a></li>
-									<li><a href="">Stories</a></li>
-									<li><a href="">Other Literary Works</a></li>
-								</ul>	
-							</li>
-							<span>*</span>
-							<li class="sub-menu-parent"><a class="nav-link-effect nav-before nav-after">GALLERY</a></li>
-							<span>*</span>
-							<li class="about sub-menu-parent">
-								<a class="nav-link-effect nav-before nav-after">ABOUT</a>
-								<ul class="sub-menu sub-menu-before sub-menu-after">
-									<li><a href="">History</a></li>
-									<li><a href="">Institution Profile</a></li>
-									<li><a href="">Editorial Board</a></li>
-									<li><a href="">Constitution and by Laws</a></li>
-								</ul>	
-							</li>
-						</ul>
+		<div class="container home">
+			<div class="red-bar"></div>
+			<header class="title-bar">
+				<div class="title row title-col-1">
+					<div class="t-elem-1">
+						<img class="logo-1" src="images/logo/University of Nueva Caceres Logo.png">	
+					</div>
+					<div class="t-elem-2">
+						<h1><a href="index.html">THE DEMOCRAT</a></h1>	
+					</div>
+					<div class="t-elem-3">
+						<img class="logo-2" src="images/logo/The DEMOCRAT Logo.png">
+					</div>
+					<nav class="link-account">
+						<a class="link-effect link-effect-tablet">Login</a>
+						<a class="link-effect link-effect-tablet">Sign Up</a>
 					</nav>
-				</div>
-			</div>
-			
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<img src="images/tosb-2016.jpg" style="width:100%">
-				</div>
+				</div> <!-- End of title -->
 
-				<div class="mySlides fade">
-					<img src="images/palaro-2016.jpg" style="width:100%">
-					<div class="text">
-						<h2><a href="#">Lorem Ipsum</a></h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-							commodo mi. Maecenas vitae ipsum in arcu pharetra volutpat. 
-							Cras sit amet ligula dolor.
-						</p>
-					</div>
+				<div class="row nav-menu title-col-2">
+					<div class="menu-btn-burger"><img src="images/icons/burger-dropdown.PNG"></div>
+					<ul class="menu">
+						<li class="menu-btn"><a class="nav-link-effect nav-before nav-after" href="#">HOME</a></li>
+						<span class="asterisk">*</span>
+						<li id="menu-btn-news" class="menu-btn dropdown">
+							<a class="nav-link-effect nav-before nav-after dropbtn" href="#">NEWS</a>
+							<div class="menu-btn-burger-inner"><img class="burger-btn-unhover" src="images/icons/burger-dropdown-inner-0.PNG"> <img class="burger-btn-hover"src="images/icons/burger-dropdown-inner.PNG"></div>
+							<ul class="inner-menu inner-menu-news hidden">
+								<li><a href="#">Hot</a></li>
+								<li><a href="#">Fresh</a></li>
+								<li><a href="#">More News</a></li>
+							</ul>
+						</li >
+						<span class="asterisk">*</span>
+						<li id="menu-btn-feature" class="menu-btn dropdown">
+							<a class="nav-link-effect nav-before nav-after dropbtn" href="#">FEATURE</a>
+							<div class="menu-btn-burger-inner"><img class="burger-btn-unhover" src="images/icons/burger-dropdown-inner-0.PNG"> <img class="burger-btn-hover"src="images/icons/burger-dropdown-inner.PNG"></div>
+							<ul class="inner-menu hidden">
+								<li><a href="#">Featured News</a></li>
+								<li><a href="#">Featured Articles</a></li>
+							</ul>
+						</li>
+						<span class="asterisk">*</span>
+						<li id="menu-btn-feature" class="menu-btn dropdown">
+							<a class="nav-link-effect nav-before nav-after dropbtn" href="#">SECTIONS</a>
+							<div class="menu-btn-burger-inner"><img class="burger-btn-unhover" src="images/icons/burger-dropdown-inner-0.PNG"> <img class="burger-btn-hover"src="images/icons/burger-dropdown-inner.PNG"></div>
+							<ul class="inner-menu inner-menu-sections hidden">
+								<li><a href="#">UNC Hot Seat</a></li>
+								<li><a href="#">Articles</a></li>
+								<li><a href="#">Opinion</a></li>
+								<li><a href="#">Sports</a></li>
+								<li><a href="#">Others</a></li>
+							</ul>
+						</li>
+						<span class="asterisk">*</span>
+						<li class="menu-btn"><a class="nav-link-effect nav-before nav-after" href="#">GALLERY</a></li>
+						<span class="asterisk">*</span>
+						<li id="menu-btn-about" class="menu-btn dropdown">
+							<a class="nav-link-effect nav-before nav-after dropbtn" href="#">ABOUT</a>
+							<div class="menu-btn-burger-inner"><img class="burger-btn-unhover" src="images/icons/burger-dropdown-inner-0.PNG"> <img class="burger-btn-hover"src="images/icons/burger-dropdown-inner.PNG"></div>
+							<ul class="inner-menu hidden">
+								<li><a href="#">History</a></li>
+								<li><a href="#">Institution Profile</a></li>
+								<li><a href="#">Editorial Board</a></li>
+								<li><a href="#">Constitution and by Laws</a></li>
+							</ul>
+						</li>
+						<li class="menu-btn menu-btn-account dropdown">
+							<a class="nav-link-effect nav-before nav-after" href="#">ACCOUNT</a>
+							<div class="menu-btn-burger-inner"><img class="burger-btn-unhover" src="images/icons/burger-dropdown-inner-0.PNG"> <img class="burger-btn-hover"src="images/icons/burger-dropdown-inner.PNG"></div>
+							<ul class="inner-menu hidden">
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
+						</li>
+					</ul>
 				</div>
+			</header> <!-- End of header title-bar -->
 
-				<div class="mySlides fade">
-					<img src="images/agrarian-reform.jpg" style="width:100%">
-					<div class="text">
-						<h2><a href="#">Lorem Ipsum</a></h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-							commodo mi. Maecenas vitae ipsum in arcu pharetra volutpat. 
-							Cras sit amet ligula dolor.
-						</p>
-					</div>
+			<div id="da-slider" class="da-slider slideshow">
+				<div class="da-slide" style=" background: url('images/slideshow/palaro-2016.jpg') no-repeat; background-size: 100% 100%;">
 				</div>
-				
-				<div class="mySlides fade">
-					<img src="images/cegp.jpg" style="width:100%">
-					<div class="text">
-						<h2><a href="#">Lorem Ipsum</a></h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-							commodo mi. Maecenas vitae ipsum in arcu pharetra volutpat. 
-							Cras sit amet ligula dolor.
-						</p>
-					</div>
-				</div>
-				
-				
-				<div class="slide-left">
-				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				</div>
-				<div class="slide-right">
-				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>
-				
-				<div class="dot-group" style="text-align:center">
-					<span class="dot" onclick="currentSlide(1)"></span> 
-					<span class="dot" onclick="currentSlide(2)"></span> 
-					<span class="dot" onclick="currentSlide(3)"></span>
-					<span class="dot" onclick="currentSlide(4)"></span>				  
-				</div>
-			
-				
-			</div>
+				<div class="da-slide" style=" background: url('images/slideshow/agrarian-reform.jpg') no-repeat; background-size: 100% 100%;">
+					<h2>Lorem</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec erat nunc. Ut sagittis felis eu est sollicitudin lobortis. In ac ipsum sit amet enim auctor egestas. Morbi libero neque, ultrices sit amet est fringilla, sollicitudin mollis orci.
+					</p>
+					<a href="#" class="da-link">Read more</a>
 
-			
-			<!-- News Block -->
-			<div class="news-block">
-				<div class="news-block-header">
-					<h2>LATEST NEWS</h2>
 				</div>
-				
-				<div class="row">
-					<div class="col-lg-4 col-md-4 inner-news-block">
-						<div class="news-box">
-							<a href="#"><img src="images/news/duterte-edca-featured.jpg"></a>
-							<div class="news-description">
-								<a href="#"><h3>Lorem ipsum</h3></a>
-								
-								<p class="author-date">
-									by: Lorem Ipsum <br>
-									August 18, 2016
-								</p>
-								
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-									commodo mi. Maecenas vitae ipsum in arcu pharetra volutpat. 
-									Cras sit amet ligula dolor.
-								</p>
-								
-								<button class="button" >
-									<span>Read More</span>
-								</button>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-lg-4 col-md-4 inner-news-block">
-						<div class="news-box">
-							<a href="#"><img src="images/news/gabiola-featured.jpg"></a>
-							<div class="news-description">
-								<a href="#"><h3>Lorem ipsum</h3></a>
-								<p class="author-date">
-									by: Lorem Ipsum <br>
-									August 18, 2016
-								</p>
-								
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-									commodo mi. Maecenas vitae ipsum in arcu pharetra volutpat. 
-									Cras sit amet ligula dolor.
-								</p>
-								
-								<button class="button" >
-									<span>Read More</span>
-								</button>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-lg-4 col-md-4 inner-news-block">
-						<div class="news-box">
-							<a href="#"><img src="images/news/pananalakay-featured.jpg"></a>
-							<div class="news-description">
-								<a href="#"><h3>Lorem ipsum</h3></a>
-								<p class="author-date">
-									by: Lorem Ipsum <br>
-									August 18, 2016
-								</p>
-								
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-									commodo mi. Maecenas vitae ipsum in arcu pharetra volutpat. 
-									Cras sit amet ligula dolor.
-								</p>
-								
-								<button class="button" >
-									<span>Read More</span>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div> <!--End of class row-->
-				
-				<button class="btn-view-more">
-					<span>View More</span>
-				</button>
-			</div> <!--End of class news block-->
-				
-			
-			
-			<!--Feature block-->
-			<div class="feature-block">
-				<div class="feature-block-col-1">
-					<div class="feature-row">
-						<div class="feature-box">
-							<div class="feature-inner-box">
-								<a href="#"><img src="images/agrarian-reform.jpg"></a>
-								<div class="feature-description">
-									<a href="#"><h3>Lorem ipsum</h3></a>
-									
-									<p class="author-date">
-										by: Lorem Ipsum <br>
-									</p>
-									
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-										commodo mi. 
-									</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="feature-box">
-							<div class="feature-inner-box">
-								<a href="#"><img src="images/feature/democrat-64.jpg"></a>
-									<div class="feature-description">
-									<a href="#"><h3>Lorem ipsum</h3></a>
-									
-									<p class="author-date">
-										by: Lorem Ipsum <br>
-									</p>
-									
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-										commodo mi.
-									</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="feature-box">
-							<div class="feature-inner-box">
-								<a href="#"><img src="images/cegp.jpg"></a>
-								<div class="feature-description">
-									<a href="#"><h3>Lorem ipsum</h3></a>
-									
-									<p class="author-date">
-										by: Lorem Ipsum
-									</p>
-									
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-										commodo mi.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					
-					<div class="feature-row">
-						<div class="feature-box">
-							<div class="feature-inner-box">
-								<a href="#"><img src="images/feature/jj.jpg"></a>
-								<div class="feature-description">
-									<a href="#"><h3>Lorem ipsum</h3></a>
-									
-									<p class="author-date">
-										by: Lorem Ipsum <br>
-									</p>
-									
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-										commodo mi.
-									</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="feature-box">
-							<div class="feature-inner-box">
-								<a href="#"><img src="images/feature/mr-ms-palaro-2015.jpg"></a>
-									<div class="feature-description">
-									<a href="#"><h3>Lorem ipsum</h3></a>
-									
-									<p class="author-date">
-										by: Lorem Ipsum <br>
-									</p>
-									
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-										commodo mi.
-									</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="feature-box">
-							<div class="feature-inner-box">
-								<a href="#"><img src="images/feature/cheerdance-cba.jpg"></a>
-								<div class="feature-description">
-									<a href="#"><h3>Lorem ipsum</h3></a>
-									
-									<p class="author-date">
-										by: Lorem Ipsum
-									</p>
-									
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										Curabitur a porta urna, ut auctor felis. Pellentesque ac 
-										commodo mi.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="da-slide" style=" background: url('images/slideshow/tosb-2016.jpg') no-repeat; background-size: 100% 100%;">
+					<a href="#" class="da-link">Read more</a>
 				</div>
-				
-				<div class="feature-block-col-2">
-					<h2>F<br>E<br>A<br>T<br>U<br>R<br>E</h2>
+				<div class="da-slide" style=" background: url('images/slideshow/cegp.jpg') no-repeat; background-size: 100% 100%;">
+					<h2>Lorem Ipsum</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec erat nunc. Ut sagittis felis eu est sollicitudin lobortis. In ac ipsum sit amet enim auctor egestas. Morbi libero neque, ultrices sit amet est fringilla, sollicitudin mollis orci.
+					</p>
+					<a href="#" class="da-link">Read more</a>
 				</div>
-			</div>
-			<!--End of Feature block-->
-			
-			
-			<!--Sections block-->
-			<div class="footer-block">
-				<div class="footer-row footer-row-1">
-					<h2>SECTIONS</h2>
-					<div class="sections-row">
-						<div class="col-lg-2 col-md-4 col-xs-4 section-box">
-							<button class="section-col section-col-1">
-								<h3>UNC Hot Seat</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</button>
-						</div>
-						
-						<div class="col-lg-2 col-md-4 col-xs-4 section-box">
-							<button class="col-lg-2 col-md-4 section-col section-col-2">
-								<h3>Article</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</button>
-						</div>
-						
-						<div class="col-lg-2 col-md-4 col-xs-4 section-box">
-							<button class="col-lg-2 col-md-4 section-col section-col-3">
-								<h3>Opinion</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</button>
-						</div>
-						
-						<div class="col-lg-2 col-md-4 col-xs-4 section-box">
-							<button class="col-lg-2 col-md-4 section-col section-col-4">
-								<h3>Sports</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</button>
-						</div>
-						
-						<div class="col-lg-2 col-md-4 col-xs-4 section-box">
-							<button class="col-lg-2 col-md-4 section-col section-col-5">
-								<h3>Stories</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</button>
-						</div>
-						
-						<div class="col-lg-2 col-md-4 col-xs-4 section-box">
-							<button class="col-lg-2 col-md-4 section-col section-col-6">
-								<h3>Other Literary Works</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</button>
-						</div>
-					</div>
-				</div>
-				
-				<div class="footer-row footer-row-2">
-					<div class="col-lg-6 col-md-6 col-xs-6 footer-left">
-						<p>&copy; 2015 The Democrat, UNC, All Rights Reserved.</p>
-						<p>Powered by <a href="#">Nikko Atuan</a></p>
-					</div>
-					<div class="col-lg-6 col-md-6 col-xs-6 footer-right">
-						<p>Connect with us</p>
-						<p>
-							<a href="#"><img src="images/logo/facebook color.jpg"></a>
-							<a href="#"><img src="images/logo/googleplus color.jpg"></a>
-							<a href="#"><img src="images/logo/linkedin color.jpg"></a>
-							<a href="#"><img src="images/logo/tumblr color.jpg"></a>
-							<a href="#"><img src="images/logo/twitter color.jpg"></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<!--End of sections block-->
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div> <!-- End of the slider -->
 		</div>
-		
+
+		<div class="news-block">
+			<div class="news-col news-col-1"></div>
+			<div id="twitter_widget" class="news-col news-col-2">
+				<a class="twitter-timeline" data-width="400" data-height="700" href="https://twitter.com/SSample_Simple">Tweets by SSample_Simple</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+
+		<div class="feature-block">
 			
-			<script type="text/javascript" src="js/slideshow.js"></script>
+		</div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+		</script>
 	</body>
 
 </html>
