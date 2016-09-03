@@ -452,13 +452,14 @@ img.logo-1, img.logo-2{
 }
 
 .h-feat-col-1{
-	width: 75%;
+	width: 70%;
 }
 
 .h-feat-col-2{
-	margin-top: 10px;
-	width: 25%;
+	margin-top: 50px;
+	width: 30%;
 	overflow:hidden; 
+	padding: 10px;
 }
 
 
