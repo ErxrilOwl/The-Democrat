@@ -99,6 +99,28 @@ img.logo-1, img.logo-2{
     background-repeat: no-repeat;
 }
 
+#search{
+	width: 100px;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	font-size: 14px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin: 1px;
+	background-color: white;
+	background-image: url('../images/icons/search-icon.png');
+	background-repeat: no-repeat;
+	padding: 1px 1px 1px 20px;
+	-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#search:focus{
+	width: 300px;
+}
+
 /******************************* Login and Sign up  ***********************************/
 .link-account{
 	display: inline;
@@ -411,7 +433,7 @@ img.logo-1, img.logo-2{
 	margin-top: -20px;
 	padding: 0;
 	width: 100%;
-	height: 1000px;
+	height: 1700px;
 	background-color: white;
 	background-size: 100% 100%;
 	background-attachment: fixed;
@@ -555,3 +577,70 @@ img.logo-1, img.logo-2{
 
 
 /**************************************** End of News block ****************************************************/
+
+/**************************************** Footer block ****************************************************/
+footer{
+	height: 300px;
+	background-color: #515A5A;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+footer .col-1-content p a{
+	color: #B2BABB;
+}
+
+footer .col-1-content p a:hover, footer .col-2-content ul li a:hover{
+	color: red;
+}
+
+footer .col-1-content .pp{
+	font-size: 14px;
+}
+
+footer .col-1-content p, footer .col-2-content p, footer .col-3-content p, footer .col-2-content ul, footer .col-3-content p{
+	margin: 0;
+	padding: 8px 0;
+}
+
+footer .col-1-content .p-1, footer .col-2-content p, footer .col-3-content p{
+	border-bottom: 2px solid red;
+}
+
+footer .col-4{
+	float: left;
+	width: 33%;
+	padding: 30px;
+	margin: 0;
+}
+
+footer .col-2-content ul li{
+	padding: 3px;
+	color: white;
+}
+
+footer .col-2-content ul li a{
+	color: white;
+}
+
+.social-icons{
+	padding: 20px 0px;
+	width: 100%;
+}
+
+.social-icons div{
+	float: left;
+	width: 10%;
+	margin: 0;
+	padding: 0;
+}
+
+.social-icons div img{
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+/**************************************** End of Footer block *********************************************/

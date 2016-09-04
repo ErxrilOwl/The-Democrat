@@ -5,7 +5,7 @@
 		display: none;
 	}
 
-	.menu .menu-btn-account, .menu-btn-burger-inner{
+	.menu .menu-btn-account, .menu-btn-burger-inner, .li-search-small{
 		display: none;
 	}
 
@@ -17,7 +17,17 @@
 /************************************************** Medium devices **************************************************/
 
 @media (min-width: 992px) and (max-width: 1199px){
-	.menu-btn-burger{
+	#search{
+		font-size: 13px;
+		width: 90px;
+		
+	}
+	
+	#search:focus{
+		width: 230px;
+	}
+	
+	.menu-btn-burger, .li-search-small{
 		display: none;
 	}
 
@@ -27,28 +37,35 @@
 	
 	/*News Contents*/
 	
-	.news-block{
+	.news-block, .feature-block{
 		height: 1800px;
 	}
 	
-	.news-latest .col-6 .nh-content{
+	.news-latest .col-6 .nh-content, .feat-latest .col-6 .fh-content{
 		height: 520px;
 		padding: 10px 15px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-img, .news-latest .col-6 .nh-content .nh-img .nh-inside-img{
+	.news-latest .col-6 .nh-content .nh-img, .news-latest .col-6 .nh-content .nh-img .nh-inside-img,
+	.feat-latest .col-6 .fh-content .fh-img, .feat-latest .col-6 .fh-content .fh-img .fh-inside-img
+	{
 		height: 170px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-img .nh-inside-img{
+	.news-latest .col-6 .nh-content .nh-img .nh-inside-img, 
+	.feat-latest .col-6 .fh-content .fh-img .fh-inside-img{
 		padding: 0px 15px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-desc h4{
+	.news-latest .col-6 .nh-content .nh-desc h4,
+	.feat-latest .col-6 .fh-content .fh-desc h4
+	{
 		padding-top: 8px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-desc p{
+	.news-latest .col-6 .nh-content .nh-desc p,
+	.feat-latest .col-6 .fh-content .fh-desc p
+	{
 		font-size: 12px;
 	}
 	
@@ -62,13 +79,57 @@
 		padding: 17px 60% 17px 17px;
 		height: 80px;
 	}
+	
+	.h-feat-col-2{
+		margin-top: 15px;
+	}
+	
+	
+	footer{
+		height: 300px;
+		font-size: 13px;
+	}
+
+
+	footer .col-1-content .pp{
+		font-size: 12px;
+	}
+
+	footer .col-4{
+		width: 33%;
+	}
+
+	.social-icons{
+		padding: 20px 0px;
+		width: 100%;
+	}
+
+	.social-icons div{
+		width: 15%;
+	}
+
+	.social-icons div img{
+		width: 30px;
+		height: 30px;
+	}
+
 }
 
 
 
 /************************************************** Small devices **************************************************/
 @media (min-width: 768px) and (max-width: 991px){
-	.menu-btn-burger, .menu-btn-burger-inner{
+	#search{
+		font-size: 11px;
+		width: 75px;
+		
+	}
+	
+	#search:focus{
+		width: 180px;
+	}
+	
+	.menu-btn-burger, .menu-btn-burger-inner, .li-search-small{
 		display: none;
 	}
 
@@ -168,12 +229,73 @@
 		padding: 14px 60% 14px 14px;
 		height: 70px;
 	}
+	
+	.feature-block{
+		height: 3000px;
+	}
+	.feat-latest .col-12{
+		width: 100%;
+	}
+	
+	.feat-latest .col-6 .fh-content{
+		height: 435px;
+	}
+	
+	footer{
+		height: 400px;
+		font-size: 13px;
+	}
+
+
+	footer .col-1-content .pp{
+		font-size: 12px;
+	}
+
+	footer .col-6{
+		width: 50%;
+	}
+	
+	footer .col-12{
+		width: 100%;
+		text-align: center;
+	}
+
+	.social-icons{
+		padding: 20px 0px;
+		width: 100%;
+	}
+
+	.social-icons div{
+		width: 20%;
+	}
+
+	.social-icons div img{
+		width: 30px;
+		height: 30px;
+	}
 }
 
 
 
 /************************************************** Extra small devices **************************************************/
 @media (min-width: 480px) and (max-width: 767px){
+	.search-small{
+		display: none;
+	}
+	
+	.li-search-small div, .li-search-small div:focus, 
+	.li-search-small div #search-small:focus, .li-search-small div #search-small:hover{
+		padding: 0px 20px 0px 10px;
+	}
+	
+	.li-search-small div #search-small, .li-search-small div{
+		width: 100%;
+	}
+	
+	.li-search-small div #search-small:focus{
+		color: red;
+	}
+	
 	img.logo-1, img.logo-2{
 		width: 30px;
 		height: 30px;
@@ -445,39 +567,53 @@
 	.news-block{
 		height: 2600px;
 	}
-	.news-latest .col-12{
+	.news-latest .col-12,.feat-latest .col-12{
 		width: 100%;
 	}
 	
-	.news-latest .col-6 .nh-content{
+	.news-latest .col-6 .nh-content, .feat-latest .col-6 .fh-content{
 		height: 370px;
 		padding: 8px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-img, .news-latest .col-6 .nh-content .nh-img .nh-inside-img{
+	.news-latest .col-6 .nh-content .nh-img, .news-latest .col-6 .nh-content .nh-img .nh-inside-img,
+	.feat-latest .col-6 .fh-content .fh-img, .feat-latest .col-6 .fh-content .fh-img .fh-inside-img
+	{
 		height: 130px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-img .nh-inside-img{
+	.news-latest .col-6 .nh-content .nh-img .nh-inside-img,
+	.feat-latest .col-6 .fh-content .fh-img .fh-inside-img
+	{
 		padding: 0px 15px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-desc h4{
+	.news-latest .col-6 .nh-content .nh-desc h4,
+	.feat-latest .col-6 .fh-content .fh-desc h4
+	{
 		padding-top: 5px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-desc p{
+	.news-latest .col-6 .nh-content .nh-desc p,
+	.news-latest .col-6 .nh-content .nh-desc p
+	{
 		text-align: justify;
 		font-size: 12px;
 	}
 	
-	.nh-content .button{
+	.nh-content .button, .nh-content .button,
+	.fh-content .button, .fh-content .button
+	{
 		padding: 7px;
 		width: 120px;
 		font-size: 13px;
 	}
 	
 	/* Feature Block */
+	.feature-block{
+		height: 2600px;
+	}
+	
 	
 	.feature-block .h-feature-header h2, .feature-block .h-feature-header h2 a{
 		font-size: 120%;
@@ -487,12 +623,70 @@
 		padding: 12px 60% 12px 12px;
 		height: 60px;
 	}
+	
+	.h-feat-col-1{
+		width: 100%;
+	}
+	
+	.h-feat-col-2{
+		display: none;
+	}
+	
+	
+	footer{
+		height: 600px;
+		font-size: 13px;
+	}
+
+	footer .col-1-content .pp{
+		font-size: 12px;
+	}
+	
+	footer .col-12{
+		width: 100%;
+		text-align: center;
+	}
+
+	.social-icons{
+		padding: 20px 0px;
+		width: 100%;
+	}
+
+	.social-icons div{
+		width: 20%;
+	}
+
+	.social-icons div img{
+		width: 30px;
+		height: 30px;
+	}
 }
 
 
 
 /************************************************** Super extra small devices **************************************************/
 @media (max-width: 479px){
+	.search-small{
+		display: none;
+	}
+	
+	.search-small{
+		display: none;
+	}
+	
+	.li-search-small div, .li-search-small div:focus, 
+	.li-search-small div #search-small:focus, .li-search-small div #search-small:hover{
+		padding: 0px 20px 0px 10px;
+	}
+	
+	.li-search-small div #search-small, .li-search-small div{
+		width: 100%;
+	}
+	
+	.li-search-small div #search-small:focus{
+		color: red;
+	}
+	
 	img.logo-1, img.logo-2{
 		display: none;
 	}
@@ -767,36 +961,48 @@
 		width: 100%;
 	}
 	
-	.news-block{
+	.news-block, .feature-block{
 		height: 2550px;
 	}
-	.news-latest .col-12{
+	.news-latest .col-12, .feat-latest .col-12{
 		width: 100%;
 	}
 	
-	.news-latest .col-6 .nh-content{
+	.news-latest .col-6 .nh-content,
+	.feat-latest .col-6 .fh-content
+	{
 		height: 370px;
 		padding: 3px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-img, .news-latest .col-6 .nh-content .nh-img .nh-inside-img{
+	.news-latest .col-6 .nh-content .nh-img, .news-latest .col-6 .nh-content .nh-img .nh-inside-img,
+	.feat-latest .col-6 .fh-content .fh-img, .feat-latest .col-6 .fh-content .fh-img .fh-inside-img
+	{
 		height: 100px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-img .nh-inside-img{
+	.news-latest .col-6 .nh-content .nh-img .nh-inside-img,
+	.feat-latest .col-6 .fh-content .fh-img .fh-inside-img
+	{
 		padding: 0px 20px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-desc h4{
+	.news-latest .col-6 .nh-content .nh-desc h4,
+	.feat-latest .col-6 .fh-content .fh-desc h4
+	{
 		padding-top: 3px;
 	}
 	
-	.news-latest .col-6 .nh-content .nh-desc p{
+	.news-latest .col-6 .nh-content .nh-desc p,
+	.feat-latest .col-6 .fh-content .fh-desc p
+	{
 		text-align: justify;
 		font-size: 11px;
 	}
 	
-	.nh-content .button{
+	.nh-content .button,
+	.fh-content .button
+	{
 		padding: 7px;
 		width: 120px;
 		font-size: 12px;
@@ -811,5 +1017,42 @@
 	.feature-block .h-feature-header{
 		padding: 8px 60% 8px 8px;
 		height: 50px;
+	}
+	
+	.h-feat-col-1{
+		width: 100%;
+	}
+	
+	.h-feat-col-2{
+		display: none;
+	}
+	
+	
+	footer{
+		height: 600px;
+		font-size: 13px;
+	}
+
+	footer .col-1-content .pp{
+		font-size: 12px;
+	}
+	
+	footer .col-12{
+		width: 100%;
+		text-align: center;
+	}
+
+	.social-icons{
+		padding: 20px 0px;
+		width: 100%;
+	}
+
+	.social-icons div{
+		width: 20%;
+	}
+
+	.social-icons div img{
+		width: 30px;
+		height: 30px;
 	}
 }
