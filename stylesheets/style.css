@@ -1,0 +1,1520 @@
+/*
+	File name: style.css
+	Date Created: 07/17/2016
+	Date Last Modified: 10/13/2016
+	Developer: Nikko Atuan
+*/
+
+*{box-sizing: border-box; font-family: 'Cinzel', serif;}
+body, .container, .row, .title-bar, .red-bar{ margin: 0; padding: 0; width: 100%; }
+.red-bar{ border: 2px solid red; }
+a{text-decoration: none; color: #1c1c1c;}
+ul, li{list-style: none;}
+.row{
+	width: 100%;
+}
+
+.col{
+	float: left;
+}
+.title{
+	position: relative;
+	text-align: center;
+	height: 80px;
+	overflow: hidden;
+}
+
+.title-bar{
+	height: 22vh;
+}
+.t-elem-1, .t-elem-2, .t-elem-3{
+	margin: 0;
+	padding: 0;
+	float: left;
+	margin-top: 15px;
+}
+
+img.logo-1, img.logo-2{
+	width: 50px;
+	height: 50px;
+	display: inline;
+}
+
+.t-elem-2 h1{
+	margin: 0;
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 180%;
+}
+
+.t-elem-1, .t-elem-3{
+	width: 34%;
+	text-align: right;
+}
+
+.t-elem-3{
+	text-align: left;
+}
+
+.t-elem-2{
+	width: 32%;
+	font-size: 1.2em;
+}
+
+.menu-open,.menu .open > ul{
+ 	max-height: 2000px;
+}
+
+.menu .open > .more img{
+	transform: rotate(-90deg);
+}
+
+.more img{
+ 	height: 55px;
+ 	transition: transform 0.3s;
+}
+.more{
+ 	background: rgba(0, 0, 0, 0.38);
+ 	float: right;
+ 	min-width: 10%;
+ 	cursor: move;
+}
+
+.home{
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#search{
+	width: 100px;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	font-size: 14px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin: 1px;
+	background-color: white;
+	background-image: url('../images/icons/search-icon.png');
+	background-repeat: no-repeat;
+	padding: 1px 1px 1px 20px;
+	-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#search:focus{
+	width: 300px;
+}
+
+/******************************* Login and Sign up buttons  ***********************************/
+.link-account{
+	display: inline;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.link-effect{
+	width: 70px;
+	height: 20px;
+	padding: 12px;
+	color: #282828;
+	text-align: left;
+	font-size: 16px;
+	transition: 0.2s all;
+	cursor: pointer;
+	margin: 0;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.link-effect:hover{
+	transition: 0.6s;
+	background-color: red;
+	color: white;
+}
+/******************************* End of Login and Sign up buttons  ***********************************/
+
+
+/******************************* Nav menu  ***********************************/
+.nav-menu ul li{
+	text-align: center;
+}
+
+.menu{
+	height: 30px;
+}
+
+.menu-btn{
+	position: relative;
+}
+
+.nav-menu ul > li{
+	float: left;
+	width: 16%;
+	padding: 0;
+	font-size: 110%;
+}
+
+.asterisk{
+	float: left;
+}
+
+.nav-link-effect, .nav-link-effect:visited, .nav-link-effect:hover, .nav-link-effect:active{
+	padding: 8px 25px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: relative;
+	transition: 0.5s color ease;
+	color: #000;
+} 
+
+.nav-link-effect:hover{
+	color: red;
+}
+
+.nav-before:before, .nav-after:after{
+	content: "";
+	transition: 0.5s all ease;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+}
+
+.nav-before:before{ top: -0.25em; }
+.nav-after:after{ bottom: -0.25em; }
+
+.nav-before:before, .nav-after:after{
+	height: 0.15rem;
+	width: 0;
+	background: red;
+}
+
+.nav-link-effect:before{ right: 0; }
+.nav-link-effect:after{ left: 0; }
+.nav-before:hover:before, .nav-after:hover:after{
+	width: 100%;
+}
+/******************************* End of nav menu  ***********************************/
+
+/******************************* Sub menu *******************************************/
+.dropdown{
+	position: relative;
+}
+
+.inner-menu{
+	z-index: 3000;
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 120px;
+	padding: 0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .inner-menu {
+    display: block;
+}
+
+.inner-menu li a{
+	display: block;
+	padding: 10px 10px;
+	font-size: 1em;
+}
+
+.inner-menu li{
+	width: 100% !important;
+	color: black;
+	display: block;
+}
+
+.inner-menu a:hover {
+	background-color: red;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+/******************************************* End of Sub menu ***********************************************/
+
+/********************************************* Homepage ****************************************************/
+
+.news-block, .feature-block{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 1600px;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.news-block{
+	background-image: url('../images/background/paper-texture-1.jpg');
+}
+
+.feature-block{
+	margin-top: -20px;
+	height: 1700px;
+	background-color: white;
+}
+
+.news-col{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 100vh;
+}
+
+.news-main-hot .news-col{
+	height: 245vh;
+	position: relative;
+}
+
+.news-col-1, .h-feat-col-1{
+	width: 70%;
+}
+
+.news-col-2{
+	width: 30%;
+}
+
+.fb-page{
+	width: 100%;
+}
+
+.news-col-2 .dummy-block{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 40px;
+}
+
+.news-col-header, .news-latest, .myAdmin-header{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	padding: 20px 0px 0px 30px;
+	text-align: left;
+}
+
+.news-col-header h3, .myAdmin-header h3{
+	margin: 0;
+	padding: 0 5px;
+	font-size: 180%;
+	display: inline;
+}
+
+.myAdmin-header h3{
+	font-size: 250%;
+}
+
+.news-col-header .nh-latest{
+	color: red;
+	border-bottom: 3px solid red;
+}
+
+.news-col-header .nh-news{
+	margin-left: -4px;
+	color: gray;
+	border-bottom: 3px solid gray;	
+	padding-right: 10px;
+}
+
+.news-col-header .nh-news span{
+	margin-left: 4px;
+}
+
+/* Contents*/
+
+.news-latest .col-6, .feat-latest .col-6{
+	float: left;
+	margin: 0;
+	width: 50%;
+	padding: 20px;
+}
+
+.feat-latest .col-6 .fh-content, .news-latest .col-6 .nh-content{
+	margin: 0;
+	background-color: #F2F3F4;
+	width: 100%;
+	height: 455px;
+	padding: 10px 20px;
+	position: relative;
+}
+
+.news-latest .col-6 .nh-content{
+	background-color: white;
+}
+
+.feat-latest .col-6 .fh-content:hover, .news-latest .col-6 .nh-content:hover{
+	transition: 0.5s color ease;
+	box-shadow: 2px 2px 2px 2px gray;
+	cursor: default;
+}
+
+.news-latest .col-6 .nh-content .nh-img, .feat-latest .col-6 .fh-content .fh-img{
+	padding: 0 8%;
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+}
+
+.feat-latest .col-6 .fh-content .fh-img .fh-inside-img, .news-latest .col-6 .nh-content .nh-img .nh-inside-img{
+	width: 100%;
+	height: 180px;
+}
+
+.feat-latest .col-6 .fh-content .fh-desc h4, .feat-latest .col-6 .fh-content .fh-desc h4 a, .news-latest .col-6 .nh-content .nh-desc h4, .news-latest .col-6 .nh-content .nh-desc h4 a{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.feat-latest .col-6 .fh-content .fh-desc h4, .news-latest .col-6 .nh-content .nh-desc h4{
+	padding-top: 10px;
+}
+
+.feat-latest .col-6 .fh-content .fh-desc h4 a:hover, .news-latest .col-6 .nh-content .nh-desc h4 a:hover{
+	transition: 0.5s color ease;
+	color: red;
+}
+
+.feat-latest .col-6 .fh-content .fh-desc p, .news-latest .col-6 .nh-content .nh-desc p{
+	text-align: justify;
+	font-size: 13px;
+	width: 100%;
+}
+
+.nh-content .nh-desc .para{
+	word-wrap: break-word;
+	height: 20vh;
+	overflow: hidden;
+}
+
+
+.nh-content .button, .fh-content .button, .ms-content .button{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: red;
+	border: none;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	width: 135px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.button span{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.nh-content .button span:after, .fh-content .button span:after, .ms-content button span:after{
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	font-size: 14px;
+}
+
+.nh-content .button:hover span, .fh-content .button:hover span, .ms-content button:hover span{
+	padding-right: 25px;
+}
+
+.nh-content .button:hover span:after, .fh-content .button:hover span:after, .ms-content button:hover span:after{
+	opacity: 1;
+	right: 0;
+}
+
+
+.feature-block .h-feature-header{
+	margin: 0;
+	padding: 20px 60% 20px 20px;
+	background-color: gray;
+	width: 100%;
+	height: 90px;
+	box-shadow: 1px 3px 5px darkgray;	
+}
+
+.feature-block .h-feature-header h2, .feature-block .h-feature-header h2 a{
+	margin: 0;
+	padding: 0px ;
+	font-size: 150%;
+	color: white;
+	border-bottom: 3px solid white;
+	padding: 0px 20px 0px 0px;
+}
+
+.feature-block .h-feature-content{
+	width: 100%;
+	height: 1000px;
+	margin: 0;
+	padding: 0;
+}
+
+.h-feat-col-1, .h-feat-col-2{
+	float: left;
+	height: 1000px;
+	margin: 0;
+	padding: 0;
+}
+
+.h-feat-col-2{
+	margin-top: 50px;
+	width: 30%;
+	overflow:hidden; 
+	padding: 10px;
+}
+
+/**************************************** End of Homepage ****************************************************/
+
+/**************************************** Footer block ****************************************************/
+footer{
+	height: 300px;
+	background-color: #515A5A;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+footer .col-1-content p a{
+	color: #B2BABB;
+}
+
+footer .col-1-content p a:hover, footer .col-2-content ul li a:hover{
+	color: red;
+}
+
+footer .col-1-content .pp{
+	font-size: 14px;
+}
+
+footer .col-1-content p, footer .col-2-content p, footer .col-3-content p, footer .col-2-content ul, footer .col-3-content p{
+	margin: 0;
+	padding: 8px 0;
+}
+
+footer .col-1-content .p-1, footer .col-2-content p, footer .col-3-content p{
+	border-bottom: 2px solid red;
+}
+
+footer .col-4{
+	float: left;
+	width: 33%;
+	padding: 30px;
+	margin: 0;
+}
+
+footer .col-2-content ul li{
+	padding: 3px;
+	color: white;
+}
+
+footer .col-2-content ul li a{
+	color: white;
+}
+
+.social-icons{
+	padding: 20px 0px;
+	width: 100%;
+}
+
+.social-icons div{
+	float: left;
+	width: 10%;
+	margin: 0;
+	padding: 0;
+}
+
+.social-icons div img{
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+/**************************************** End of Footer block *********************************************/
+
+/************************************** Login / Signup Block **********************************************/
+
+.main-content, .main-content-1{
+	background: url("../images/background/paper-texture-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.main-content{
+	height: 75.6vh;
+}
+
+.main-content-1{
+	width: 100%;
+	height: 100vh;
+}
+
+.main-content, .main-content header, .main-content header h2, .row-signup, .col, .col-center, .col-side, hr, .col-center form{
+	z-index: 1;
+}
+
+.main-content header{
+	width: 100%;
+	text-align: center;
+	height: 12vh;
+	position: absolute;
+}
+
+.main-content header h2{
+	font-size: 1.8em;
+	padding: 1%;
+	height: 8vh;
+	color: red;
+	width: 50%;
+	margin: 1.5% auto;
+}
+
+.row-signup{
+	width: 100%;
+	height: 55vh;
+	position: absolute;
+	top: 15%;
+}
+
+.col{
+	float: left;
+	margin: 0;
+	height: 55vh;
+
+}
+
+.col-side{
+	width: 30%;
+}
+
+.col-center{
+	padding: 20px 50px;
+	width: 40%;
+}
+
+hr{
+	border: 2px solid red;
+	border-radius: 50%;
+	width: 50%;
+	position: absolute;
+	top: 14%;
+	left: 25%;
+}
+
+.hr2{
+	top: 89%;
+}
+
+.col-center form, .center .content{
+	padding: 15px;
+	background-color: white;
+	height: 50vh;
+	box-shadow: 1px 1px 1px 1px gray;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.col-center form .error-block{
+	height: 6vh;
+}
+
+.alert{
+	color: red;
+	font-size: 1em;
+}
+
+.col-center form input{
+	width: 80%;
+	font-family: Times;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+
+
+.submit-button, .col-btn-grp button, .row-btn-profile button, .submission .row-main .row-para .row-top .col-1 button,
+.submission .row-main .image-row .removeImage, .myAdmin .news-col-1 .news-latest button, .view .row-view .col-form button{
+	margin-top: 10px;
+	width: 170px;
+	height: 35px;
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	border: none;
+	transition: color 0.5s ease;
+}
+
+.submit-button-mtop{
+	margin: 20px 0px 25px 0px;
+}
+
+.submit-button:hover, .col-btn-grp button:hover, .row-btn-profile button:hover .submission .row-main .row-para .row-top .col-1, 
+.submission .row-main .row-para .row-top .col-1 button:hover, .submission .row-main .image-row .removeImage:hover,
+.news-main-hot .news-col .row button:hover, .profile .row-page button:hover, .myAdmin .news-col-1 .news-latest button:hover,
+.myAdmin .row-page button:hover, .view .row-view .col-form button:hover, .newCollection .row-main .image-block .image-box .btnUpload:hover{
+	background-color: white;
+	border: 1px solid red;
+	color: red;
+}
+
+.sign-up-link{
+	text-decoration: underline;
+	color: red;
+	font-size: .9em;
+}
+
+/*********************************** End of Login / Signup Block *******************************************/
+
+/************************************************ Profile **************************************************/
+.profile .header, .submission .header{
+	padding: 2px 40px;
+	font-size: 1.3em;
+	color: red;
+}
+.profile .header, .col-title, .col-btn-grp, .underline{
+	height: 9vh;
+}
+.underline{
+	height: 7vh;
+	width: 40%;
+}
+.underline h2{margin: 10px 0px;}
+.col-title{width: 70%;}
+.col-btn-grp{width:30%;}
+.underline{
+	border-bottom : 2px solid red;
+}
+.col-btn-grp{
+	padding: 10px;
+}
+.row-submission, .mysubmission{
+	margin-top: 10px;
+	width: 100%;
+}
+.mysubmission .col-6{
+	float: left;
+	width: 50%;
+	padding: 30px;
+}
+
+.mysubmission .col-6 .ms-content{
+	margin: 0;
+	background-color: white;
+	width: 100%;
+	height: 300px;
+	padding: 10px;
+	position: relative;
+}
+
+.mysubmission .col-6 .ms-content .status{
+	position: absolute;
+	top: -8px;
+	right: 10px;
+	font-weight: bold;
+	color: darkgray;
+	font-size: .9em;
+}
+
+
+.mysubmission .col-6 .ms-content:hover{
+	box-shadow: 1px 1px 1px gray;
+}
+
+.ms-img, .ms-desc{
+	float: left;
+	height: 230px;
+	padding: 5px;
+	font-size: .9em;
+	text-align: justify;
+}
+
+.ms-desc .para{
+	height: 230px;
+	text-align: justify;
+	word-wrap: break-word;
+}
+
+.ms-img{
+	width: 40%;
+	padding: 10px;
+}
+.ms-desc{
+	width: 60%;
+	overflow: hidden;
+}
+
+.ms-img .ms-inside-img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.ms-img .ms-inside-img img{
+	width: 100%;
+	height: 100%;
+	border: 1px dashed gray;
+}
+
+.edit-profile .header{
+	padding-left: 20%;
+}
+
+.side{
+	width: 20%;
+}
+.center{
+	width: 60%;
+	position: relative;
+	height: 90vh;
+}
+
+.center .content{
+	height: 170px;
+	margin-bottom: 30px;
+}
+
+.center .content-0 .col-3, .center .content-0 .col-3 .image img, .center .content-0 .col-3 .image{
+	width: 18%;
+	background-color: gray;
+	height: 120px;
+	margin: 0;
+	padding: 0;
+}
+
+.center .content-0 .col-3 .image{
+	width: 100%;
+}
+
+.center .content-0 .col-3 .image img{
+	width: 100%;
+	margin: 0;
+}
+
+.center .content-1 .col-3{
+	width: 18%;
+	text-align: right;
+	height: 3vh;
+}
+
+.center .content .image img{
+	height: 150px;	
+	width: 10vw;
+	margin: 0;
+}
+
+.center .content-0 .col-9, .center .content-1 .row .col-9{
+	width: 82%;
+	text-align: left;
+	padding: 0px 30px;
+	height: 150px;
+}
+
+.center .content-1 .row .col-9{
+	height: 3vw;
+}
+
+.center .content .col-9 input{
+	margin-bottom: 10px;
+	width: 50%;
+}
+.center .content .col-9 #Bio{
+	width: 100%;
+	resize: none;
+	height: 105px;
+}
+
+.center .content-1{
+	height: 260px;
+}
+
+.center .content-1 .row{
+	width: 100%;
+}
+
+
+.center .content-1 input{
+	margin-bottom: 15px;
+}
+
+.center .content-1 .text{
+	width: 50%;
+}
+
+.center .content-0 .col-9 .row .text, .center .content-1 .row .col-9 .text{
+	font-family: Times;
+}
+
+.center .content-1 .row .rdb{
+	width: 5%;
+}
+
+.row-btn-profile{
+	padding: 30px 0px;
+	position: absolute;
+	bottom: 1px;
+	right: 5px;
+	width: 175px;
+}
+
+.row-btn-profile-1{
+	right: 200px;
+}
+.row-btn-profile a, .row-btn-profile button{
+	margin: 0px 5px;
+}
+
+.submission .row-main .header{
+	height: 10vh;
+}
+
+.row-title-input input{
+	font-family: 'Times';
+	width: 100%;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.submission .row-main .row-para, .submission .row-main .image-row{
+	margin: 20px auto;
+	background-color: white;
+	width: 50%;
+	height: 355px;
+	padding: 10px;
+	position: relative;
+	box-shadow: 1px 1px 2px 1px gray;
+}
+
+.submission .row-main .image-row .image img{
+	width: 100%;
+	height: 258px;
+}
+
+.submission .row-main .image-row{
+	height: 50vh;
+	width: 60vh;
+	position: relative;
+	padding: 7px;
+}
+
+.submission .row-main .image-row .removeImage{
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+.submission .row-main .image-row .btnUpload{
+	position: absolute;
+	bottom: 20px;
+	left: 40%;
+}
+
+.submission .row-main .image-row .image{
+	width: 100%;
+	height: 40vh;
+	background-color: gray;
+}
+
+.submission .row-main .row-para .row-top, .submission .row-main .row-para .row-center{
+	width: 100%;
+}
+
+.submission .row-main .row-para .row-top .col{
+	float: left;
+	height: 5vh;
+}
+
+.submission .row-main .row-para .row-top .col-11{
+	width: 95%;
+}
+
+.submission .row-main .row-para .row-top .col-11 input{
+	width: 80%;
+	font-family: 'Times';
+}
+.submission .row-main .row-para .row-top .col-1{
+	width: 5%;
+}
+
+.submission .row-main .row-para .row-center{
+	width: 100%;
+	height: 350px;
+}
+
+.submission .row-main .row-para .row-center textarea{
+	height: 300px;
+	width: 100%;
+	resize: none;
+	font-family: 'Times';
+}
+
+.submission .row-main .row-para .row-top .col-1 button{
+	height: 4vh;
+	width: 4vh;
+	margin: 0;
+}
+
+.submission .row-main .row-title-input{
+	text-align: center;
+	height: 15vh;
+}
+
+.submission .row-btn-profile{
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	width: 100%;
+	margin: 0;
+	padding-right: 4.6%;
+}
+
+.submission .row-btn-profile a, .submission .row-btn-profile button{
+	float: right;
+	margin: 2px;
+	width: 170px;
+	display: inline;
+}
+/******************************************** End of Profile ***********************************************/
+
+/**************************************** Hot News *********************************************/
+
+.history, .institution-profile, .editorial, .main-news{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 150vh;
+	background-image: url('../images/background/paper-texture-1.jpg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-news{
+	height: 260vh;
+}
+
+.institution-profile{
+	height: 100vh;
+}
+
+.constitutionAndByLaws{
+	height: 540vh;
+}
+
+.editorial{
+	height: 320vh;
+}
+
+.history header, .institution-profile header, .editorial header, .main-news .main-news-header{
+	width: 100%;
+	height: 10vh;
+	padding: 2vh;
+	background-color: red;
+}
+
+.main-news .main-news-header-gray{
+	background-color: gray;	
+}
+
+.history header h2, .institution-profile header h2, .editorial h2, .main-news .main-news-header h2{
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	font-size: 2em;
+}
+
+.main-news .main-news-header h2{
+	margin-left: 2vh;
+}
+
+.history .content, .institution-profile .content, .editorial .content{
+	width: 80%;
+	margin: 30px auto;
+	background-color: white;
+	height: 130vh;
+	box-shadow: 1px 1px 1px gray;
+	text-align: justify;
+}
+
+.institution-profile .content{
+	height: 80vh;
+}
+
+.editorial .content{
+	height: 300vh;
+}
+
+.constitutionAndByLaws .content{
+	height: 520vh;
+}
+
+.history .content .row h3{
+	width: 100%;
+	text-align: center;
+}
+
+.history .content .row, .institution-profile .content .row, .editorial .content .row{
+	padding: 10px 40px;
+}
+
+.editorial .content .row ul li p{
+	text-indent: 40px;
+}
+
+.history .content .row-top, .institution-profile .content .row-top{
+	width: 100%;
+	height: 26vh;
+}
+
+.history .content .row .col-3 img, .institution-profile .content .row .col-3 img{
+	width: 90%;
+	height: 13vh;
+	margin: 70% auto 0 auto;
+}
+
+
+
+.history .content .row .col-3, .history .content .row .col-9, .institution-profile .row .col-3, .institution-profile .content .row .col-9{
+	float: left;
+	width: 90%;
+	padding: 10px 0px 0px 10px;
+	height: 24vh;
+} 
+
+.history .content .row .col-3, .institution-profile .content .row .col-3{
+	width: 10%;
+}
+
+.submission .row-btn-profile .errorMessage{
+	color: red;
+	position: absolute;
+	font-weight: bold;
+	left: 40%;
+	bottom: 20px;
+	padding: 10px 20px;
+	background-color: white;
+	box-shadow: 1px 1px 1px gray;
+}
+.submission{
+	background-size: 110% 100%;
+	height: 80vh;
+	background-repeat: repeat;
+}
+
+.myAdmin, .myAdmin .news-col-1, .myAdmin .news-col-2{
+	height: 77vh;
+}
+
+.myAdmin .news-col-1 .news-latest{
+	height: 50vh;
+	width: 100%;
+}
+
+.myAdmin .news-col-1 .news-latest button{
+	width: 100%;
+	height: 10vh;
+	border-radius: 10px;
+}
+
+.profile{
+	height: 90vh;
+	background-size: 130% 50%;
+	background-repeat: repeat;
+}
+
+.edit-profile{
+	height: 110vh;
+}
+
+.news-main-hot .news-col .row, .profile .row-page, .myAdmin .row-page, .gallery .row-page{
+	width: 100%;
+	height: 5vh;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+}
+
+.profile .row-page{
+	padding: 10px;
+	position: relative;
+	clear: both;
+}
+
+.myAdmin .row-page, .gallery .row-page{
+	height: 10vh;
+	padding: 20px;
+}
+
+.news-main-hot .news-col .row a, .profile .row-page a, .myAdmin .row-page a, .gallery .row-page a{
+	margin: 0px;
+	padding: 0px;
+}
+
+.news-main-hot .news-col .row button, .profile .row-page button, .myAdmin .row-page button, .gallery .row-page button{
+	width: 4vh;
+	height: 4vh;
+	margin: 1px;
+	padding: 0px;
+}
+
+.news-main-hot .news-col .row .current, .profile .row-page .current, .myAdmin .row-page .current, .gallery .row-page .current{
+	background-color: white;
+	border: 1px solid red;
+	color: red;
+}
+
+
+.news-main-hot .news-col .row .special, .profile .row-page .special, .myAdmin .row-page .special, .gallery .row-page .special{
+	width: 12vh;
+	padding: 0px;
+	font-size: .7em;
+}
+
+.profile .row-page{
+	width: 100%;
+}
+
+.myAdmin .news-col-1 .news-latest .block{
+	float: left;
+	width: 50%;
+	height: 15vh;
+	padding: 20px 50px;
+}
+
+.page-error-1, .page-error-2{
+	color: red;
+	font-size: 200%;
+	padding: 10px 10vh;
+	margin: 0;
+}
+.page-error-2{
+	font-size: 150%;
+}
+
+.main-content-1 .row-table{
+	width: 100%;
+	height: 60vh;
+}
+
+.main-content-1 .row-table table{
+	background-color: white;
+	width: 80%;
+	height: 60vh;
+	margin: 50px auto;
+	border-collapse: collapse;
+	border-radius: 10px;
+}
+.main-content-1 .row-table table td, .main-content-1 .row-table table th{
+	border: 1px solid gray;
+	margin: 0;
+	padding: 6px;
+}
+
+.main-content-1 .row-table table th{
+	background-color: red;
+	color: white;
+	font-weight: bold;
+}
+
+.main-content-1 .row-table table .td-no{
+	width: 5%;
+	text-align: center;
+}
+
+.main-content-1 .row-table table .td-title-link{
+	text-decoration: underline;
+}
+
+.main-content-1 .row-table table .td-date{
+	width: 20%;
+	text-align: center;
+}
+
+.main-content-1 .row-table table .td-status{
+	width: 10%;
+}
+
+.main-content-1 .row-table table .td-status-gray{
+	color: gray;
+}
+
+.main-content-1 .row-table table .td-status-green{
+	color: green;
+}
+
+.main-content-1 .row-table table .td-status-red, .main-content-1 .row-table table .td-title-link:hover{
+	color: red;
+	font-weight: bold;
+}
+
+.main-content-1 .row-table table .td-view{
+	width: 10%;
+}
+
+.main-content-1 .row-table table .td-view button{
+	width: 100%;
+	background-color: gray;
+	color: white;
+	border: none;
+	padding: 3px;
+}
+
+.usersSubmission{
+	position: relative;
+	height: 95vh;
+}
+
+.view{
+	padding-top: 20px;
+	background-size: 100% 60%;
+	background-repeat: repeat;
+	height: 150vh;
+}
+
+.view .block{
+	width: 60%;
+	height: 100vh;
+	background-color: white;
+	box-shadow: 1px 1px 1px 1px gray;
+	margin: 30px auto;
+	border-radius: 10px;
+	padding: 20px 30px;
+}
+
+.view .block .row-title, .view .block .row-title h3, .view .block .row-title h4, .view .block .row-title h5, .view .block .row-title h6{
+	width: 100%;
+	margin: 10px 0px;
+}
+
+.view .block .row-title h3{
+	color: red;
+	font-size: 1.8em;
+}
+
+.view .block .row-title{
+	text-align: center;
+	height: 20vh;
+	margin-bottom: 50px;
+}
+
+.view .block .row-content{
+	width: 100%;
+	height: 100%;
+}
+
+.view .block .row-content .row-image{
+	padding: 0 27%;
+	width: 100%;
+	height: 200px;
+	margin: 30px 0;
+}
+.view .block .row-content .row-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.view .block .row-content .row-section p{
+	word-wrap: break-word;
+	text-align: justify;
+}
+
+.view .row-view{
+	width: 100%;
+	height: 14vh;
+	position: relative;
+}
+.view .row-view > .col{
+	float: left;
+	width: 50%;
+	height: 10vh;
+}
+
+.view .row-view .col-title{
+	padding: 13px 20px;
+	font-size: 1.6em;
+	color: red;
+}
+
+.view .row-view .col-title h3{
+	margin: 0;
+	padding: 0;
+}
+
+.view .row-view .col-form{
+	padding: 10px 20px;
+}
+
+.view .row-view .col .col{
+	float: right;
+	margin: 10px 5px;
+}
+
+.view .row-view .col-form button{
+	margin: 0;
+	width: 60px;
+	height: 22px;
+}
+
+.nh-new-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.newCollection{
+	width: 100%;
+	position: relative;
+	height: 77vh;
+}
+
+.newCollection .col-btn-grp button{
+	float: right;
+	width: 20%;
+	margin: 0 5px;
+}
+
+.newCollection .row-main .header{
+	width: 100%;
+	height: 8vh;
+}
+
+.newCollection .row-main .header .col{
+	float: left;
+	width: 50%;
+}
+
+.newCollection .row-main .header .col-btn-grp{
+	padding: 30px;
+}
+
+.newCollection .row-main .header .col-title{
+	padding: 0 30px;
+	color: red;
+	font-size: 1.2em;
+}
+
+.newCollection .row-main .row-title-input{
+	width: 50%;
+	margin: 30px auto;
+	height: 8vh;
+	background-color: white;
+	box-shadow: 1px 1px 1px 1px gray;
+	padding: 12px;
+}
+
+.newCollection .row-main .image-block{
+	float: left;
+	width: 25%;
+	height: 300px;
+	padding: 20px 25px;
+}
+
+.newCollection .row-main .image-block .removeImage{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.newCollection .row-main .image-block .image-box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: white;
+	box-shadow: 1px 1px 1px gray;
+	text-align: center;
+}
+
+.newCollection .row-main .image-block .image-box:hover{
+	box-shadow: 2px 2px 2px 2px gray;
+}
+
+.newCollection .row-main .image-block .image-box .btnUpload{
+	background-color: red;
+	color: white;
+	border: none;
+	width: 23%;
+	height: 3vh;
+}
+
+.newCollection .row-main .image-block .image-box .image{
+	width: 100%;
+	height: 230px;
+	padding: 10px 25px;
+}
+
+.newCollection .row-main .image-block .image-box .image img{
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+}
+
+.newCollection .row-error{
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 20px;
+}
+
+.newCollection .row-error p{
+	padding: 10px;
+	width: 50%;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 1px 1px 1px 1px gray;
+	color: red;
+}
+
+.gallery .row-content{
+	width: 100%;
+	height: 100vh;
+	margin: 10px;
+}
+
+.gallery .row-main .header .col-title h2{
+	margin: 20px 0 0 0;
+	font-size: 1.8em;
+}
+
+.gallery .row-main .row-content .image-block .image-box{
+	position: relative;
+}
+
+.gallery .row-main .row-content .image-block .image-box .image{
+	padding: 10px;
+}
+
+.gallery .row-main .row-content .image-block .image-box .image p{
+	font-size: 1.1em;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-top: 0px;
+}
+/**************************************** End of Hot News *********************************************/
